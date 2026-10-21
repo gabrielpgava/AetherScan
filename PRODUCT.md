@@ -8,7 +8,7 @@ macOS Human Interface Guidelines
 
 ## Stack
 
-SwiftUI, CoreWLAN, and CoreLocation; a native Xcode app project is selected from the two permitted project layouts so the app bundle can carry its required location permission metadata.
+SwiftUI, CoreWLAN, CoreLocation, and CryptoKit; a native Xcode app project is selected from the two permitted project layouts so the app bundle can carry its required location permission metadata.
 
 ## Users
 
@@ -33,6 +33,7 @@ The app runs on macOS 13 or later. It automatically begins its first scan on lau
 - Diagnose same-channel contention and adjacent-channel overlap on 2.4 GHz; recommend channels based on the networks visible in the latest scan.
 - Availability and completeness of scan fields depend on macOS permissions, hardware, regulatory region, and what CoreWLAN exposes. Explain missing access or scan data without presenting estimates as measured facts.
 - Provide `NSLocationWhenInUseUsageDescription` in the app's Info.plist. No cloud service or remote scanning is part of the product brief.
+- Check the public GitHub Releases endpoint for stable updates, download only the expected universal macOS archive, and verify its SHA-256 digest before offering installation. Wi-Fi scan data is never sent to the update service.
 - The physical app display name is AetherScan; the interface is localized in Portuguese and English, following the system language.
 
 ## Brand Commitments

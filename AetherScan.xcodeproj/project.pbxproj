@@ -18,6 +18,7 @@
 		F0A100000000000000000110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000210 /* Assets.xcassets */; };
 		F0A100000000000000000111 /* SignalSpectrumArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000211 /* SignalSpectrumArtwork.swift */; };
 		F0A100000000000000000112 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000212 /* AboutView.swift */; };
+		F0A100000000000000000113 /* AppUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000213 /* AppUpdateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F0A100000000000000000210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0A100000000000000000211 /* SignalSpectrumArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SignalSpectrumArtwork.swift; sourceTree = "<group>"; };
 		F0A100000000000000000212 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AboutView.swift; sourceTree = "<group>"; };
+		F0A100000000000000000213 /* AppUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/AppUpdateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				F0A100000000000000000202 /* WiFiNetwork.swift */,
 				F0A100000000000000000203 /* WiFiScanner.swift */,
 				F0A100000000000000000204 /* LocationPermissionService.swift */,
+				F0A100000000000000000213 /* AppUpdateController.swift */,
 				F0A100000000000000000205 /* Localization.swift */,
 				F0A100000000000000000206 /* ScannerViewModel.swift */,
 				F0A100000000000000000207 /* ContentView.swift */,
@@ -171,6 +174,7 @@
 				F0A100000000000000000107 /* ContentView.swift in Sources */,
 				F0A100000000000000000111 /* SignalSpectrumArtwork.swift in Sources */,
 				F0A100000000000000000112 /* AboutView.swift in Sources */,
+				F0A100000000000000000113 /* AppUpdateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

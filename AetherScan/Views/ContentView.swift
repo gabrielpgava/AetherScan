@@ -3,6 +3,8 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = ScannerViewModel()
+    @EnvironmentObject private var updateController: AppUpdateController
+    @Environment(\.openWindow) private var openWindow
     @State private var selectedFilter: NetworkFilter = .all
 
     private var filteredNetworks: [WiFiNetwork] {
@@ -40,7 +42,10 @@ struct ContentView: View {
         }
         .padding(24)
         .frame(minWidth: 920, minHeight: 680)
-        .task { viewModel.startIfNeeded() }
+        .task {
+            viewModel.startIfNeeded()
+            updateController.startAutomaticChecks()
+        }
         .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
             viewModel.refreshAuthorizationStatus()
         }
@@ -63,6 +68,19 @@ struct ContentView: View {
             }
 
             Spacer(minLength: 12)
+
+            if updateController.hasReadyUpdate {
+                Button {
+                    openWindow(id: "about")
+                } label: {
+                    Label(
+                        L10n.text("update.badge", updateController.availableVersion ?? ""),
+                        systemImage: "arrow.down.circle"
+                    )
+                }
+                .buttonStyle(.bordered)
+                .help(L10n.text("update.badge.help"))
+            }
 
             if let scannedAt = viewModel.scannedAt {
                 Text(L10n.text("scan.lastUpdated", scannedAt.formatted(date: .omitted, time: .shortened)))

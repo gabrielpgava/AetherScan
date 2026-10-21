@@ -122,6 +122,12 @@ make build CONFIGURATION=Release DESTINATION="platform=macOS,arch=arm64"
 
 > O projeto usa configuração de assinatura voltada à compilação local. Criar um pacote destinado a terceiros pode exigir configurar a identidade de assinatura, a distribuição e a notarização da Apple.
 
+## Atualizações automáticas
+
+O AetherScan verifica a release estável do GitHub ao iniciar, no máximo uma vez a cada 24 horas. Também é possível iniciar uma busca pelo menu do app ou em **Sobre o AetherScan**. Se houver uma versão nova, o pacote é baixado em segundo plano e validado pelo SHA-256 publicado pela API do GitHub. Em **Sobre o AetherScan**, escolha **Instalar e Reiniciar** para aplicar a atualização; o app fecha e abre novamente. Se estiver instalado em `/Applications`, o macOS pode solicitar autorização de administrador. Cópias executadas diretamente do Xcode/`DerivedData` não são substituídas.
+
+Releases compatíveis devem anexar `AetherScan-<versão>-macOS-universal.zip` e publicar o digest SHA-256 do asset no GitHub. O updater não envia dados da varredura.
+
 ## Como usar
 
 1. **Abra o aplicativo.** A primeira varredura começa automaticamente.
@@ -148,7 +154,7 @@ AetherScan/
 ├── AetherScan/
 │   ├── App/                       # Inicialização e janelas
 │   ├── Models/                    # Redes, faixas e regras de análise
-│   ├── Services/                  # Varredura Wi-Fi e autorização
+│   ├── Services/                  # Varredura Wi-Fi, autorização e atualizações
 │   ├── ViewModels/                # Estado e fluxo da varredura
 │   ├── Views/                     # Interface, indicadores e tela Sobre
 │   ├── Support/                   # Localização dos textos da interface
@@ -169,12 +175,13 @@ AetherScan/
 - **CoreLocation:** gerenciamento da autorização de Localização.
 - **AppKit:** integração com funcionalidades nativas do macOS.
 - **Foundation e Combine:** estruturas de dados, estado e eventos.
+- **CryptoKit:** verificação SHA-256 dos pacotes de atualização.
 
 O aplicativo **não utiliza dependências de terceiros** na implementação disponível neste repositório.
 
 ## Privacidade e funcionamento local
 
-O AetherScan foi projetado para realizar a análise **no próprio Mac**. O código atual utiliza as informações fornecidas pelos frameworks do macOS e não implementa backend, telemetria, login, integração com nuvem ou envio de resultados a servidores externos.
+O AetherScan realiza a análise **no próprio Mac** e não envia resultados da varredura. O updater faz solicitações HTTPS ao GitHub apenas para consultar releases e baixar o pacote de atualização; não há backend próprio, telemetria ou login.
 
 A autorização de Localização é solicitada porque o **macOS a exige para revelar informações de redes Wi-Fi**, não para apresentar um mapa ou rastrear o deslocamento do usuário. O aplicativo não solicita coordenadas de localização para sua análise.
 
