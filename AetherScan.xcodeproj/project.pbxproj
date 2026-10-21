@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0A100000000000000000101 /* AetherScanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000201 /* AetherScanApp.swift */; };
+		F0A100000000000000000102 /* WiFiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000202 /* WiFiNetwork.swift */; };
+		F0A100000000000000000103 /* WiFiScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000203 /* WiFiScanner.swift */; };
+		F0A100000000000000000104 /* LocationPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000204 /* LocationPermissionService.swift */; };
+		F0A100000000000000000105 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000205 /* Localization.swift */; };
+		F0A100000000000000000106 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000206 /* ScannerViewModel.swift */; };
+		F0A100000000000000000107 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000207 /* ContentView.swift */; };
+		F0A100000000000000000108 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000501 /* Localizable.strings */; };
+		F0A100000000000000000109 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000502 /* InfoPlist.strings */; };
+		F0A100000000000000000110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000210 /* Assets.xcassets */; };
+		F0A100000000000000000111 /* SignalSpectrumArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000211 /* SignalSpectrumArtwork.swift */; };
+		F0A100000000000000000112 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A100000000000000000212 /* AboutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0A100000000000000000201 /* AetherScanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AetherScanApp.swift; sourceTree = "<group>"; };
+		F0A100000000000000000202 /* WiFiNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/WiFiNetwork.swift; sourceTree = "<group>"; };
+		F0A100000000000000000203 /* WiFiScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/WiFiScanner.swift; sourceTree = "<group>"; };
+		F0A100000000000000000204 /* LocationPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LocationPermissionService.swift; sourceTree = "<group>"; };
+		F0A100000000000000000205 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support/Localization.swift; sourceTree = "<group>"; };
+		F0A100000000000000000206 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/ScannerViewModel.swift; sourceTree = "<group>"; };
+		F0A100000000000000000207 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ContentView.swift; sourceTree = "<group>"; };
+		F0A10000000000000000020A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A10000000000000000020B /* Localizable.strings in en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F0A10000000000000000020C /* Localizable.strings in pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F0A10000000000000000020D /* InfoPlist.strings in en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F0A10000000000000000020E /* InfoPlist.strings in pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F0A10000000000000000020F /* AetherScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AetherScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A100000000000000000210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A100000000000000000211 /* SignalSpectrumArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SignalSpectrumArtwork.swift; sourceTree = "<group>"; };
+		F0A100000000000000000212 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AboutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A100000000000000000301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0A100000000000000000401 = {
+			isa = PBXGroup;
+			children = (
+				F0A100000000000000000402 /* AetherScan */,
+				F0A100000000000000000403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A100000000000000000402 /* AetherScan */ = {
+			isa = PBXGroup;
+			children = (
+				F0A100000000000000000201 /* AetherScanApp.swift */,
+				F0A100000000000000000202 /* WiFiNetwork.swift */,
+				F0A100000000000000000203 /* WiFiScanner.swift */,
+				F0A100000000000000000204 /* LocationPermissionService.swift */,
+				F0A100000000000000000205 /* Localization.swift */,
+				F0A100000000000000000206 /* ScannerViewModel.swift */,
+				F0A100000000000000000207 /* ContentView.swift */,
+				F0A100000000000000000211 /* SignalSpectrumArtwork.swift */,
+				F0A100000000000000000212 /* AboutView.swift */,
+				F0A100000000000000000210 /* Assets.xcassets */,
+				F0A10000000000000000020A /* Info.plist */,
+				F0A100000000000000000501 /* Localizable.strings */,
+				F0A100000000000000000502 /* InfoPlist.strings */,
+			);
+			path = AetherScan;
+			sourceTree = "<group>";
+		};
+		F0A100000000000000000403 /* Products */ = {
+			isa = PBXGroup;
+			children = (F0A10000000000000000020F /* AetherScan.app */,);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A100000000000000000501 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A10000000000000000020B /* Localizable.strings in en */,
+				F0A10000000000000000020C /* Localizable.strings in pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F0A100000000000000000502 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A10000000000000000020D /* InfoPlist.strings in en */,
+				F0A10000000000000000020E /* InfoPlist.strings in pt-BR */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A100000000000000000601 /* AetherScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A100000000000000000701 /* Build configuration list for PBXNativeTarget "AetherScan" */;
+			buildPhases = (
+				F0A100000000000000000801 /* Sources */,
+				F0A100000000000000000301 /* Frameworks */,
+				F0A100000000000000000802 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = AetherScan;
+			productName = AetherScan;
+			productReference = F0A10000000000000000020F /* AetherScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A100000000000000000901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2710;
+				TargetAttributes = {
+					F0A100000000000000000601 = {CreatedOnToolsVersion = 27.1; };
+				};
+			};
+			buildConfigurationList = F0A100000000000000000702 /* Build configuration list for PBXProject "AetherScan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, "pt-BR", Base,);
+			mainGroup = F0A100000000000000000401;
+			productRefGroup = F0A100000000000000000403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (F0A100000000000000000601 /* AetherScan */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A100000000000000000802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A100000000000000000108 /* Localizable.strings in Resources */,
+				F0A100000000000000000109 /* InfoPlist.strings in Resources */,
+				F0A100000000000000000110 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A100000000000000000801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A100000000000000000101 /* AetherScanApp.swift in Sources */,
+				F0A100000000000000000102 /* WiFiNetwork.swift in Sources */,
+				F0A100000000000000000103 /* WiFiScanner.swift in Sources */,
+				F0A100000000000000000104 /* LocationPermissionService.swift in Sources */,
+				F0A100000000000000000105 /* Localization.swift in Sources */,
+				F0A100000000000000000106 /* ScannerViewModel.swift in Sources */,
+				F0A100000000000000000107 /* ContentView.swift in Sources */,
+				F0A100000000000000000111 /* SignalSpectrumArtwork.swift in Sources */,
+				F0A100000000000000000112 /* AboutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F0A100000000000000000A01 /* Debug project settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SUPPORTED_PLATFORMS = macosx;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0A100000000000000000A02 /* Release project settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SUPPORTED_PLATFORMS = macosx;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F0A100000000000000000A03 /* Debug app settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AetherScan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aetherscan.mac;
+				PRODUCT_NAME = AetherScan;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0A100000000000000000A04 /* Release app settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AetherScan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aetherscan.mac;
+				PRODUCT_NAME = AetherScan;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A100000000000000000701 /* Build configuration list for PBXNativeTarget "AetherScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A100000000000000000A03 /* Debug app settings */,
+				F0A100000000000000000A04 /* Release app settings */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A100000000000000000702 /* Build configuration list for PBXProject "AetherScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A100000000000000000A01 /* Debug project settings */,
+				F0A100000000000000000A02 /* Release project settings */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0A100000000000000000901 /* Project object */;
+}
