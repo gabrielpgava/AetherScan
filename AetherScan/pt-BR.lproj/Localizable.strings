@@ -57,6 +57,7 @@
 "about.menuItem" = "Sobre o AetherScan";
 "about.title" = "Sobre o AetherScan";
 "about.tagline" = "O inspetor espectral de Wi-Fi para macOS";
+"about.version" = "Versão %@";
 "about.companyLogo" = "Logo da Ideal Opposite";
 "about.developedBy" = "Desenvolvido por";
 "about.companyDescriptor" = "Soluções Tecnológicas";

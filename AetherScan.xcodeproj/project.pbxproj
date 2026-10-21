@@ -216,6 +216,8 @@
 				INFOPLIST_FILE = AetherScan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aetherscan.mac;
 				PRODUCT_NAME = AetherScan;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -234,6 +236,8 @@
 				INFOPLIST_FILE = AetherScan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aetherscan.mac;
 				PRODUCT_NAME = AetherScan;
 				SWIFT_EMIT_LOC_STRINGS = YES;

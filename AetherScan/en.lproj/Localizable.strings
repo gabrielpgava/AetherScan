@@ -57,6 +57,7 @@
 "about.menuItem" = "About AetherScan";
 "about.title" = "About AetherScan";
 "about.tagline" = "The Spectral Wi-Fi Inspector for macOS";
+"about.version" = "Version %@";
 "about.companyLogo" = "Ideal Opposite logo";
 "about.developedBy" = "Developed by";
 "about.companyDescriptor" = "Technology Solutions";

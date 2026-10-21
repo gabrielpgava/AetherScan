@@ -20,6 +20,9 @@ struct AboutView: View {
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
+                    Text(L10n.text("about.version", appVersion))
+                        .font(.footnote)
+                        .foregroundStyle(.tertiary)
                 }
 
                 Spacer(minLength: 0)
@@ -70,5 +73,9 @@ struct AboutView: View {
         }
         .padding(26)
         .frame(width: 480, height: 400)
+    }
+
+    private var appVersion: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0.0"
     }
 }
