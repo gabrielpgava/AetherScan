@@ -201,7 +201,7 @@ Para interpretar os resultados corretamente:
 
 O código está organizado em camadas de interface, estado, serviços e modelos para facilitar a evolução da aplicação. Para propor melhorias ou relatar problemas, utilize as [Issues](https://github.com/gabrielpgava/AetherScan/issues) e os [Pull Requests](https://github.com/gabrielpgava/AetherScan/pulls) do repositório.
 
-**Licença:** até o momento, não há um arquivo `LICENSE` neste repositório. A disponibilização pública do código não implica automaticamente autorização de redistribuição ou reutilização; consulte os responsáveis antes de utilizá-lo em outro projeto.
+**Licença:** o código original deste projeto está disponível sob a **PolyForm Shield License 1.0.0** (source-available, com restrição de concorrência). Leia [LICENSE](LICENSE), [NOTICE](NOTICE) e [LICENSING.md](LICENSING.md); terceiros conservam suas próprias licenças.
 
 ## Créditos
 
